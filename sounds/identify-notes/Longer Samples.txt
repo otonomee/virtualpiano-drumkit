@@ -1,0 +1,3 @@
+These piano samples were separated into a new folder so that the samples could be stretched a bit.
+
+The original samples were a bit too short for being able to identify the note

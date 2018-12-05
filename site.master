@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="site.master.cs" Inherits="site" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">ISM330 Project</asp:ContentPlaceHolder>
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="default.aspx">ISM330 Project</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="default.aspx">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutPage.aspx">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse Games
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="VirtualKeyboard.aspx">Virtual Piano</a>
+                            <a class="dropdown-item" href="VirtualDrummer.aspx">Virtual Drummer</a>
+                            <%--                            <a class="dropdown-item" href="SimonSays.aspx">Music Memory (Simon Says) Game</a>--%>
+                            <a class="dropdown-item" href="PitchDiffTest.aspx">Pitch Difference Test</a>
+                            <%--                            <a class="dropdown-item" href="WaveformManipulator.aspx">Waveform Manipulator</a>--%>
+                            <a class="dropdown-item" href="IdentifyNotePlayed.aspx">Identify The Note Played</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a runat="server" class="nav-link" onserverclick="logout_Click" id="logoutItem">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a runat="server" class="nav-link" href="LoginPage.aspx" id="loginItem">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <asp:ContentPlaceHolder ID="mainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+
+</body>
+</html>

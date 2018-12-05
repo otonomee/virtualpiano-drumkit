@@ -1,0 +1,303 @@
+﻿html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #f9ffe5 !important;
+}
+
+.body {
+    background-color: #f9ffe5 !important;
+}
+
+.page-heading {
+    text-align: center;
+    margin-bottom: -30px;
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.page-sub-heading {
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: -55px;
+}
+
+.page-sub-sub-heading {
+    text-align: center;
+    margin-top: 58px;
+    margin-bottom: -120px;
+}
+
+/****************
+HOME PAGE
+*****************/
+
+.note-played-image {
+    height: 228px;
+}
+
+@media only screen and (min-width: 1376px) {
+    .note-played-image {
+        height: 248px !important;
+    }
+}
+
+
+/******************
+VIRTUAL PIANO
+*******************/
+.keys {
+    text-align: center;
+    margin-top: 85px;
+    margin: auto;
+    border: 30px solid;
+    justify-content: center;
+    width: 818px;
+    margin-top: 84px;
+}
+
+.black-keys {
+    text-align: center;
+    margin-top: 85px;
+}
+
+.key {
+    width: 50px;
+    display: inline-block;
+    border: 1px solid #000;
+    height: 215px;
+    background-color: #fff;
+    margin-bottom: -6px;
+}
+
+.black-key {
+    width: 31px;
+    height: 126px;
+    background-color: #000;
+    display: inline-block;
+    margin-left: -18px;
+    position: absolute;
+}
+
+.black-key:hover {
+    background-color: rgb(70, 70, 70);
+}
+
+.black-key:active {
+    background-color: rgb(50,50,50);
+}
+
+
+.key:hover {
+    background-color: rgba(220, 220, 220, 0.8);
+}
+
+.key:active {
+    background-color: rgba(185, 185, 185, 0.9);
+}
+
+.key-pressed { /* to be triggered from javascript */   
+    transition: all .15s;
+    background-color: rgba(185, 185, 185, 0.99);
+}
+
+/******************
+DRUM KIT
+*******************/
+
+.drum-kit-container {
+    text-align: center;
+}
+
+.drum-pressed {
+    transition: all .15s;
+    height: 475px !important;
+}
+
+/****************
+PITCH DIFF TEST
+*****************/
+
+.game-container {
+    width: max-content;
+    margin: 0 auto;
+    background: rgba(240, 248, 255, 0.8)
+}
+
+.border-1 {
+    border: 7px solid #dee2e6 !important;
+}
+
+.rounded-1 {
+    border-radius: 3.25rem !important;
+}
+
+.pitch-diff-image {
+    height: 200px;
+    margin: 25px;
+}
+
+.pitch-diff-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.play-again-btn {
+    display: none;
+}
+
+.hide-play-btn {
+    display:none;
+}
+
+.show-play-again-btn {
+    display: initial !important;
+}
+
+#playAgainButton {
+    display: none;
+}
+
+.game-over-btn {
+    margin: 0 auto;
+}
+
+#gameOverMessage {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 42px;
+}
+
+#roundDisplay {
+    text-align: center;
+    font-size: 23px;
+    margin-top: 30px;
+    margin-bottom: -110px;
+    font-wegith:500;
+}
+
+/****************
+IDENTIFY THE NOTE PLAYED
+*****************/
+
+
+.identify-keys {
+    text-align: center;
+    margin-top: 85px;
+    margin: auto;
+    border: 30px solid;
+    justify-content: center;
+    width: 647px;
+    margin-top: 84px;
+}
+
+.identify-key {
+    width: 80px;
+    display: inline-block;
+    border: 1px solid #000;
+    height: 215px;
+    background-color: #fff;
+    vertical-align: top;
+}
+
+.identify-black-key {
+    width: 55px;
+    height: 126px;
+    background-color: #000;
+    display: inline-block;
+    margin-left: -29px;
+    position: absolute;
+}
+
+.note-names {
+    margin-top: 144px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.black-note-names {
+    margin-top: 59px;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.identify-black-key:hover {
+    background-color: rgb(70, 70, 70);
+}
+
+.identify-black-key:active {
+    background-color: rgb(50,50,50);
+}
+
+.identify-key:hover {
+    background-color: rgba(220, 220, 220, 0.8);
+}
+
+.identify-key:active {
+    background-color: rgba(185, 185, 185, 0.9);
+}
+
+.identify-key-pressed { /* to be triggered from javascript */
+    transition: all .15s;
+    background-color: rgba(185, 185, 185, 0.99);
+}
+
+.identifyNotePlayBtn {
+    height: 116px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 90px;
+    margin-bottom: -65px;
+}
+
+.speakerImage {
+
+}
+
+.identifyNoteAnswerDisplay {
+    margin-top: 70px;
+    margin-bottom: -70px;
+}
+
+/********************************
+    LOGIN & REGISTER FORM
+********************************/
+
+.login-register-page-container {
+    width: 520px;
+    margin: 0 auto;
+    background: rgba(240, 248, 255, 0.8);
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.login-container {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.login-txtbox {
+    display: block;
+    margin: 0 auto;
+    margin-bottom:30px;
+}
+
+.login-button {
+    width: 176px;
+}
+
+.register-txtbox {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.register-container {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.register-button {
+    width: 176px;
+}
